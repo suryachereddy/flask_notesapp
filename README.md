@@ -1,6 +1,6 @@
 # Flask Notes App
 This app uses python web framework, Flask.<br>
-For reasons unknown this code working only with the 0.16.0 version of werkzeug.<br>
+For reasons unknown this code works only with the 0.16.0 version of werkzeug.<br>
 To run this code.
 ```powershell
  pip install werkzeug==0.16.0
