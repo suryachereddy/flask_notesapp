@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style> 
+        button:hover{
+            background-color: blanchedalmond;
+            color:#4f4f4f ;
+        }
+        </style>
+        <title>my webpage</title>
+    </head>
+    <body style="color:rebeccapurple; text-align: justify; margin: 5%; background-color: blanchedalmond;">
+        <h1 style="font-family:helvetica;">Your Notes:</h1><br>
+        <ul style="background-color:#ccccff;color: black;">
+            {% for note in notes %}
+            <li>{{note}}</li>
+            {% endfor %}
+        </ul>
+        <form action="{{url_for('index') }}" method="POST" >
+            <input  type="text" name="note" placeholder="Enter note here.">
+            <button style="background-color: #4f4f4f;color: blanchedalmond;">Add Note</button>
+        </form>
+    </body>
+</html>
